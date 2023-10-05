@@ -1,0 +1,178 @@
+*{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: white;
+}
+nav{
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid gray;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline;
+    margin-right: 100px;
+}
+nav li {
+    flex: 1; 
+    text-align: center; 
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.ABOUT{
+    background-color: aqua ;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid black;
+}
+#ABOUT h1{
+    text-align: center;
+    font-size: xx-large;
+
+}
+.aboutimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutimage img{
+    border-radius: 10px;   
+}
+.ABOUT p{
+    
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+#PAPERSPUBLISHED {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #7FFFD4;
+    border-radius: 10px;
+    border: 3px solid black;
+    overflow: auto;
+}
+#PAPERS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+#PAPERSPUBLISHED h2{
+    font-size: xx-large;
+}
+.paper {
+    text-align: center;
+    padding: 10px;
+}
+.paper img {
+    height: 350px;
+    width: 300px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: auto;
+}
+.paper a {
+    text-decoration: none;
+    color: black;
+}
+.paper h3{
+    text-align: center;
+    text-decoration: none;
+}
+#HOBBIES{
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    background-color: #48D1CC;
+    border-radius: 10px;
+    border: 3px solid black;
+    overflow: auto;
+}
+#HOBBIES h2{
+    font-size: xx-large;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.hobby{
+    text-align: center;
+    padding: 20px;
+    border: 1px;
+}
+.hobby .image{
+    text-align: center;
+}
+.hobby img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid black;
+    overflow: auto;
+}
+.hobby h3{
+    margin-top: 10px;
+}
+.hobby p{
+    text-align: justify;
+}
+.BLOGS{
+    background-color: #00BFFF;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.BLOGS li{
+    list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    nav ul {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+    }
+    nav ul li {
+        margin-bottom: 10px; 
+    }
+    nav li{
+        justify-content: center;
+    }
+    .aboutimage img {
+        height: 250px;
+        width: 200px; 
+    }
+    #PAPERS {
+        grid-template-columns: 1fr 1fr;
+    }
+    .paper {
+        margin-bottom: 20px; 
+    }
+    .paper img {
+        height: 200px;
+        width: 130px;
+    }
+    .paper h3 {
+        margin-top: 10px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
